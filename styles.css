@@ -264,6 +264,7 @@ header {
     background-color: transparent;
     color: #f1683a;
     border-radius: 6px;
+    overflow-y: auto;
 }
 
 #benefit .saving span {
@@ -399,5 +400,10 @@ header {
 
     body .information {
         padding: 20px 40px;
+    }
+
+    body #benefit {
+        padding: 20px 40px;
+        overflow-y: auto;
     }
 }
