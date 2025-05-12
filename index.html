@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMentor</title>
+    <script defer src="script.js"></script>
+    <link rel="icon" href="img/laptop.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">My<span>Mentor</span></h2>
+        <nav class="navigation">
+            <a href="#" id="first">Главное</a>
+            <a href="#staff" id="staff">Задачи</a>
+            <a href="#benefit" id="benefit-link">Полезные ресурсы</a>
+        </nav>
+        <div class="burger">
+            <box-icon name="menu" color="white"></box-icon>
+        </div>
+    </header>
+    <div class="main">
+        <div id="mentors">
+            <div class="mentor">
+                <img src="img/zuck.webp" alt="" class="mentor-click">
+                <div class="about">
+                    <div class="name">Mark Zuckerberg</div>
+                    <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, inventore.</div>
+                    <button class="choose-btn">choose</button>
+                </div>
+            </div>
+            <div class="mentor">
+                <img src="img/bill.webp" alt="" class="mentor-click">
+                <div class="about">
+                    <div class="name">Bill Gates</div>
+                    <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, inventore.</div>
+                    <button class="choose-btn">choose</button>
+                </div>
+            </div>
+            <div class="mentor">
+                <img src="img/steve-jobs.webp" alt="" class="mentor-click">
+                <div class="about">
+                    <div class="name">Steve Jobs</div>
+                    <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, inventore.</div>
+                    <button class="choose-btn">choose</button>
+                </div>
+            </div>
+            <div class="mentor">
+                <img src="img/sam.jpg" alt="" class="mentor-click">
+                <div class="about">
+                    <div class="name">Sam Altman</div>
+                    <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, inventore.</div>
+                    <button class="choose-btn">choose</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="tasks" id="tasks">
+        <h2 id="head-h2"></h2>
+        <ul id="ul-item"></ul>
+    </section>
+
+    <form class="information">
+        <input type="text" placeholder="Username" id="user-name" required>
+        <input type="text" placeholder="Your goal" id="user-goal" required>
+        <div class="selected-mentor">Your mentor: </div>
+        <button class="go-to-tasks" type="button">Go To Your Tasks</button>
+        <button type="button" class="clear-btn">Clear All Data</button>
+    </form>
+    <section id="benefit">
+        <h2>Полезные ресурсы</h2>
+        <div class="saving">
+            <input type="text" id="input-el">
+            <div class="btns">
+                <button id="input-btn">SAVE INPUT</button>
+                <button id="delete-btn">DELETE ALL</button>
+                <button id="delete-selected-btn">DELETE SELECTED</button>
+            </div>
+            <ul id="ul-el"></ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
