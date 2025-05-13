@@ -13,7 +13,7 @@ const main = document.querySelector('.main');
 const tasksPage = document.getElementById('tasks');
 const ulItem = document.getElementById('ul-item');
 const firstLink = document.getElementById('first');
-const secondLinnk = document.getElementById('staff');
+const secondLink = document.getElementById('staff');
 const thirdLink = document.getElementById('benefit-link');
 const information = document.querySelector('.information');
 const benefit = document.getElementById('benefit');
@@ -46,6 +46,7 @@ for (let i = 0; i < chooseBtn.length; i++) {
         const nameValue = userName.value.trim();
         const goalValue = goal.value.trim();
 
+        // Store in localStorage
         localStorage.setItem('mentor', mentorName);
         localStorage.setItem('username', nameValue);
         localStorage.setItem('goal', goalValue);
@@ -161,7 +162,7 @@ firstLink.addEventListener('click', function () {
     benefit.style.display = 'none';
 });
 
-secondLinnk.addEventListener('click', function () {
+secondLink.addEventListener('click', function () {
     main.style.display = 'none';
     tasksPage.style.display = 'block';
     tasksPage.style.justifyContent = 'center';
